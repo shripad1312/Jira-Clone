@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRA CLONE</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+   <div id="nav">
+     Jira Clone
+    <ul id="lists">
+        <li>Your Work</li>
+        <li>Project</li>
+        <li>Dashboard</li>
+        <li>Create</li>
+    </ul>
+
+    <input type="search" name="search" id="search" placeholder="search">
+   </div>
+
+  <section id="main">
+    <div class="conatiner" id="todo">ToDo
+        <input type="button" value="+Add" style="margin-top: 4px;" id="btn">
+        <input type="text" name="Enter issue" id="inpt" placeholder="Enter issue" style="margin-top: 5px;display: none; ">
+        <!-- <div id="card" draggable="true"> <p>time</p>
+          <br/>
+          Your Text
+         
+        </div> -->
+    </div>
+    <div class="conatiner" id="working">Working</div>
+    <div class="conatiner" id="completed">Completed</div>
+  </section>
+  
+
+    <script src="./script.js"></script>
+</body>
+</html>

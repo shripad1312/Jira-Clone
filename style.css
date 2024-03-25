@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.766);
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+ 
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 9px;
+    height:50px;
+    width: calc(100%-0px);
+    background-color: gray;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#lists{
+    display: flex;  
+    flex-direction: row;
+   justify-content: space-evenly;
+   list-style: none;
+   background-color: gray;
+   cursor: pointer;
+}
+#lists>li{
+    margin-right: 50px;
+    background-color: gray;
+}
+
+#main{
+    padding: 10px;
+    height: calc(90%-0px);
+    border: solid groove 1px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: gainsboro;
+}
+
+.conatiner{
+    padding:15px;
+    height: 500px;
+    width: 400px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(29, 27, 27, 0.493) 1px;
+    background-color: rgb(247,248,249);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    
+}
+
+.conatiner::-webkit-scrollbar {
+    display: none;
+}
+
+#btn{
+    width: 100px;
+    height:40px;
+    background-color: rgb(35, 139, 236);
+    border-radius: 20px;
+    outline: 0px;
+    color: black;
+    font-weight: 600;
+    border: transparent;
+}
+#card{
+    display: inline;
+    min-width:399px;
+    min-height:60px ;
+    border: solid black 1px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 2px 2px;
+    contain: content;
+    white-space: wrap;
+    contain: content;
+}
+
+#card>p{
+    position: absolute;
+    top:0;
+    left:0;
+}
+#working>div{
+    border: solid rgb(231, 25, 25) 1px;
+    
+}
+#working>div>h1{
+   
+    
+}
+
+#completed>div{
+    border: solid rgb(33, 237, 33) 1px;
+}
+
+#inpt{
+    outline: 0px;
+    font-size: larger;
+    height: 40px;
+    border: transparent;
+    background-color: gainsboro;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-top: 2px;
+}
+
+#search{
+    width:200px;
+    outline: none;
+    border:transparent;
+    height:30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 9px;
+        height:50px;
+        width: calc(100%-0px);
+        background-color: gray;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #lists{
+        display: none;  
+        flex-direction: row;
+       justify-content: space-evenly;
+       list-style: none;
+       background-color: gray;
+    }
+    #lists>li{
+        margin-right: 50px;
+        background-color: gray;
+    }
+
+    #main{
+        padding: 1px;
+        height: calc(90%-0px);
+        border: solid groove 1px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: gainsboro;
+        flex-wrap: wrap;
+        contain: content;
+    }
+
+    .conatiner{
+        /* padding:15px; */
+        height: 500px;
+        width: calc(100%-0px);
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
+        border: solid rgba(29, 27, 27, 0.493) 1px;
+        background-color: rgb(247,248,249);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+        
+    }
+
+    #card{
+        /* display: inline; */
+        min-width:200px;
+        min-height:60px ;
+        border: solid black 1px;
+        margin-top: 10px;
+        background-color: white;
+        box-shadow: 2px 2px;
+        contain: content;
+        white-space: wrap;
+        contain: content;
+    }
+  }
